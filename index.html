@@ -4,21 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Momentum</title>
   </head>
   <body>
-    <form id="login-form" class="hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="What is your name?"
-      />
-      <input type="submit" vlaue="Log In" />
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-
-    <script src="app.js"></script>
+    <div class="container">
+      <main class="main-section">
+        <div id="weather" class="fs-20 mt-50">
+          <span></span>
+          <span></span>
+        </div>
+        <h2 id="clock" class="clock-style">00:00</h2>
+        <form id="login-form" class="hidden">
+          <input
+            class="inputText fs-24"
+            required
+            maxlength="15"
+            type="text"
+            placeholder="Type your name here"
+          />
+          <!-- <input class="inputText fs-16" type="submit hidden" vlaue="Log In" /> -->
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form" class="pad-20">
+          <input
+            class="inputText fs-16"
+            type="text"
+            placeholder="Write a To Do here"
+            required
+          />
+        </form>
+        <ul id="todo-list" class="ta-center">
+          <div class="todo-align"></div>
+        </ul>
+        <div id="quotes" class="fs-16">
+          <span></span>
+          <span></span>
+        </div>
+      </main>
+    </div>
+    <script src="js/greeting.js" type="module"></script>
+    <script src="js/clock.js" type="module"></script>
+    <script src="js/wiseSaying.js" type="module"></script>
+    <script src="js/background.js" type="module"></script>
+    <script src="js/todo.js" type="module"></script>
+    <script src="js/weather.js" type="module"></script>
   </body>
 </html>
